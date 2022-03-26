@@ -1,10 +1,12 @@
 import React from 'react';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+
 
 // Importar Componentes
 import Login from './components/auth/Login';
 import NuevaCuenta from './components/auth/NuevaCuenta';
 import Proyectos from './components/projects/Proyectos';
+
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
         <Route exact path='/proyectos' component={Proyectos} />
       </Switch>
     </Router>
+      
   );
 }
 
